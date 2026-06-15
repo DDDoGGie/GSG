@@ -14,7 +14,7 @@ Recent advances in spatial transcriptomics (ST) have opened new avenues for pres
 > **!!! The recommended operating system is Ubuntu 18.04 LTS.** Some packages may not download correctly on Windows.
 ### Use python virutal environment with conda
 ```sh
-conda creat -n gsg python=3.8
+conda create -n gsg python=3.8
 conda activate gsg
 # Need install cudnn based on your CUDA version.Refer to https://developer.nvidia.com/cudnn-archive
 # conda install cudnn[=version]
