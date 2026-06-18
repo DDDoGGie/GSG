@@ -60,7 +60,7 @@ python GSG_cluster.py --device 0 --cluster_label layer_guess_reordered_short --f
 We found that SpaceFlow has different versions on GitHub and PyPi. The version installed in the recommended way is backward. In addition, the new version on GitHub has corrections to the old version, while the code on PyPi has fatal problems, which leads to serious problems in spatial domain identification. -->
 
 ## 📚 Citation
-Wang, C., Zhang, T., Sun, H., ... , Xu, D., Feng, X., Zeng, A., Guan, R. (2026). A masked generative graph representation learning framework empowering precise spatial domain identification.
+Wang C, Zhang T, Sun H, et al. A masked generative graph representation learning framework empowering precise spatial domain identification[J]. Bioinformatics, 2026, 42(6).
 
 ## 📩 Contact
 If you have any questions, feel free to contact [chuyao25@mails.jlu.edu.cn](mailto:chuyao25@mails.jlu.edu.cn).
