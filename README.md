@@ -20,6 +20,8 @@ conda activate gsg
 # conda install cudnn[=version]
 ```
 ### Install GSG
+Note: The PyPI version has not yet been updated. We plan to synchronize the latest release before July. In the meantime, we recommend installing GSG directly from the GitHub repository.
+
 Install GSG and dgl(for gpu) from PyPi:
 ```sh
 pip install GSG==0.5.8
