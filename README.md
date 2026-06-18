@@ -36,7 +36,7 @@ tensorboardX==2.5.1, pyyaml==6.0.1, plotly==5.21.0, kaleido==0.2.1, igraph==0.9.
 ## 🚀 Quick Start
 See our model document details from [Docs](https://keaml-guan.github.io/GSG/).
 
-We provide the scripts for reproducing the quantitative and visualization results of the paper in [/docs/Reproducibility/](https://github.com/keaml-Guan/GSG/tree/main/docs/Reproducibility(Updating)/).
+We provide the scripts for reproducing the quantitative and visualization results of the paper in [/docs/tutorials/](https://github.com/keaml-Guan/GSG/tree/main/docs/tutorials/).
  
 Before using, you need to download and unzip the data:
 ```sh
@@ -45,11 +45,12 @@ cat 151673.zip* > 151673.zip
 unzip -d ./ 151673.zip
 cd ../..
 ```
-And then, you can start using code following:
+And then, you can start using the following code :
     
 ```sh
-python GSG_cluster.py --device 0 --cluster_label layer_guess_reordered_short --feature_dim_method "PCA"
-# feature_dim_method default is "PCA", and another is "HVG"
+adata = GSG.pp.read_10X_Visium_with_label(args.folder_name + args.sample_name)
+adata, graph = GSG.pp.Graph_10X(adata, args)
+adata, model = GSG.train.GSG_train(adata, graph, args)
 ```
 
 
