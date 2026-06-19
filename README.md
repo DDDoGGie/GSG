@@ -14,23 +14,14 @@ Recent advances in spatial transcriptomics (ST) have opened new avenues for pres
 > **!!! The recommended operating system is Ubuntu 18.04 LTS.** Some packages may not download correctly on Windows.
 ### Use python virutal environment with conda
 ```sh
-conda create -n gsg python=3.8
+conda create -n gsg python=3.7 -y
 conda activate gsg
 # Need install cudnn based on your CUDA version.Refer to https://developer.nvidia.com/cudnn-archive
 # conda install cudnn[=version]
 ```
 ### Install GSG
-
-Install GSG and dgl(for gpu) from PyPi:
 ```sh
-pip install GSG==0.5.8
-pip install dgl-cu110 -f https://data.dgl.ai/wheels/repo.html
-```
-Required packages include:
-```sh
-torch==1.9.0, cudnn==8.4, numpy==1.22.0, scanpy==1.8.2, anndata==0.8.0, dgl==0.9.0,
-pandas==1.2.4, scipy==1.7.3, scikit-learn==1.0.1, tqdm==4.64.1, matplotlib==3.5.3,
-tensorboardX==2.5.1, pyyaml==6.0.1, plotly==5.21.0, kaleido==0.2.1, igraph==0.9.8
+pip install GSG
 ```
 
 
