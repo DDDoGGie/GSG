@@ -20,7 +20,6 @@ conda activate gsg
 # conda install cudnn[=version]
 ```
 ### Install GSG
-Note: The PyPI version has not yet been updated. We plan to synchronize the latest release before July. In the meantime, we recommend installing GSG directly from the GitHub repository.
 
 Install GSG and dgl(for gpu) from PyPi:
 ```sh
@@ -63,7 +62,7 @@ adata, model = GSG.train.GSG_train(adata, graph, args)
 We found that SpaceFlow has different versions on GitHub and PyPi. The version installed in the recommended way is backward. In addition, the new version on GitHub has corrections to the old version, while the code on PyPi has fatal problems, which leads to serious problems in spatial domain identification. -->
 
 ## 📚 Citation
-Wang C, Zhang T, Sun H, et al. A masked generative graph representation learning framework empowering precise spatial domain identification[J]. Bioinformatics, 2026, 42(6).
+Wang C, Zhang T, Sun H, et al. A masked generative graph representation learning framework empowering precise spatial domain identification[J]. *Bioinformatics*, 2026, 42(6). [https://doi.org/10.1093/bioinformatics/btag333.](https://doi.org/10.1093/bioinformatics/btag333)
 
 ## 📩 Contact
 If you have any questions, feel free to contact [chuyao25@mails.jlu.edu.cn](mailto:chuyao25@mails.jlu.edu.cn).
