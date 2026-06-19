@@ -28,26 +28,15 @@ pip install GSG
 ## 🚀 Quick Start
 See our model document details from [Docs](https://keaml-guan.github.io/GSG/).
 
-We provide the scripts for reproducing the quantitative and visualization results of the paper in [/docs/tutorials/](https://github.com/keaml-Guan/GSG/tree/main/docs/tutorials/).
+We provide the jupyter notebook for reproducing the quantitative and visualization results of the paper in [/docs/tutorials/](https://github.com/keaml-Guan/GSG/tree/main/docs/tutorials/).
  
-Before using, you need to download and unzip the data:
-```sh
-cd ./data/10X
-cat 151673.zip* > 151673.zip
-unzip -d ./ 151673.zip
-cd ../..
-```
-And then, you can start using the following code :
+The core workflow of GSG can be summarized in three main steps. You can get started with the following code:
     
 ```sh
-adata = GSG.pp.read_10X_Visium_with_label(args.folder_name + args.sample_name)
-adata, graph = GSG.pp.Graph_10X(adata, args)
-adata, model = GSG.train.GSG_train(adata, graph, args)
+adata = GSG.pp.read_10X_Visium_with_label(args.folder_name + args.sample_name)     # Read in data
+adata, graph = GSG.pp.Graph_10X(adata, args)                                       # preprocess
+adata, model = GSG.train.GSG_train(adata, graph, args)                             # graph representation learning
 ```
-
-
-
-![](https://github.com/keaml-Guan/GSG/blob/main/figures/Result.jpg)
 
 <!-- ## Issues on experiment
 We found that SpaceFlow has different versions on GitHub and PyPi. The version installed in the recommended way is backward. In addition, the new version on GitHub has corrections to the old version, while the code on PyPi has fatal problems, which leads to serious problems in spatial domain identification. -->
